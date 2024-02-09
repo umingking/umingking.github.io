@@ -16,7 +16,7 @@
 <meta property="og:description" content="在git中输入：npm install hexo-filter-mermaid-diagrams --save报以下错误信息 npm ERR! code CERT_HAS_EXPIREDnpm ERR! errno CERT_HAS_EXPIREDnpm ERR! request to https:&#x2F;&#x2F;registry.npm.taobao.org&#x2F;hexo-filter-mermaid-diag">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-02-04T05:28:49.000Z">
-<meta property="article:modified_time" content="2024-02-06T11:07:45.779Z">
+<meta property="article:modified_time" content="2024-02-09T06:48:43.662Z">
 <meta property="article:author" content="Mizuki">
 <meta property="article:tag" content="hexo">
 <meta property="article:tag" content="hexo插件">
@@ -223,7 +223,7 @@
       <span class="post-meta-item-icon">
         <i class="fa fa-keyboard-o"></i>
         <span class="post-meta-item-text">  总字数: </span>
-        <span class="post-count">120字</span>
+        <span class="post-count">56字</span>
       </span>
     </span>
 
@@ -247,25 +247,6 @@
 <span id="more"></span>
 <p>解决方法：</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm cache clean --force</span><br><span class="line">npm config <span class="built_in">set</span> strict-ssl <span class="literal">false</span></span><br></pre></td></tr></table></figure>
-<pre class="mermaid">graph LR
-    A[开始] --> B[中间步骤]
-    B --> C[结束]</pre>
-<pre class="mermaid">gantt
-    title A Gantt Diagram
-    dateFormat YYYY-MM-DD
-    section Section
-        A task          :a1, 2014-01-01, 30d
-        Another task    :after a1, 20d
-    section Another
-        Task in Another :2014-01-12, 12d
-        another task    :24d</pre>
-<pre class="mermaid">sequenceDiagram
-    participant Alice
-    participant Bob
-    Alice ->> Bob: 你好，Bob！
-    Bob -->> Alice: 你好，Alice！</pre>
-
-
 
       
 
