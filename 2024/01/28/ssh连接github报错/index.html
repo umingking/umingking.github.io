@@ -244,7 +244,7 @@
         <p>在将博客内容通过git上传至github上时，连接不上，报错：</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ssh: connect to host github.com port 22: Connection timed out</span><br><span class="line">fatal: Could not <span class="built_in">read</span> from remote repository.</span><br><span class="line"></span><br><span class="line">Please make sure you have the correct access rights</span><br><span class="line">and the repository exists.</span><br><span class="line">FATAL Something<span class="string">&#x27;s wrong. Maybe you can find the solution here: https://hexo.io/docs/troubleshooting.html</span></span><br><span class="line"><span class="string">Error: Spawn failed</span></span><br><span class="line"><span class="string">    at ChildProcess.&lt;anonymous&gt; (D:\xxx\blog\xxx\node_modules\hexo-deployer-git\node_modules\hexo-util\lib\spawn.js:51:21)</span></span><br><span class="line"><span class="string">    at ChildProcess.emit (node:events:514:28)</span></span><br><span class="line"><span class="string">    at cp.emit (D:\xxx\blog\xxx\node_modules\cross-spawn\lib\enoent.js:34:29)</span></span><br><span class="line"><span class="string">    at ChildProcess._handle.onexit (node:internal/child_process:294:12)</span></span><br><span class="line"><span class="string"></span></span><br></pre></td></tr></table></figure>
 <span id="more"></span>
-<p>查看报错信息是连接主机github.com,端口22：连接超时<br>试着测试一下：ssh -T <a href="mailto:&#x67;&#x69;&#x74;&#64;&#103;&#105;&#116;&#104;&#x75;&#x62;&#x2e;&#x63;&#111;&#109;">&#x67;&#x69;&#x74;&#64;&#103;&#105;&#116;&#104;&#x75;&#x62;&#x2e;&#x63;&#111;&#109;</a></p>
+<p>查看报错信息是连接主机github.com,端口22：连接超时<br>试着测试一下：ssh -T <a href="mailto:&#x67;&#105;&#116;&#x40;&#x67;&#105;&#116;&#x68;&#117;&#x62;&#46;&#x63;&#111;&#109;">&#x67;&#105;&#116;&#x40;&#x67;&#105;&#116;&#x68;&#117;&#x62;&#46;&#x63;&#111;&#109;</a></p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ ssh -T git@github.com</span><br><span class="line">ssh: connect to host github.com port 22: Connection timed out</span><br></pre></td></tr></table></figure>
 <p>一样的问题<br>github连接报”ssh: connect to host github.com port 22: Connection timed out”错误<br><strong>解决办法</strong><br>在本地电脑目录上：C:\Users\用户名\.ssh存放公钥私钥(<code>id_rsa</code>和<code>id_rsa.pub</code>)的文件里，新建config文本，内容如下：</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Host github.com</span><br><span class="line">User 注册github的邮箱</span><br><span class="line">Hostname ssh.github.com</span><br><span class="line">PreferredAuthentications publickey</span><br><span class="line">IdentityFile ~/.ssh/id_rsa</span><br><span class="line">Port 443</span><br></pre></td></tr></table></figure>
@@ -638,11 +638,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">科学上网</a>
+                <a href="javascript:void(0)" class="js-tag color4">Markdown</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Markdown</a>
+                <a href="javascript:void(0)" class="js-tag color3">八字</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">科学上网</a>
               </li>
             
             <div class="clearfix"></div>
