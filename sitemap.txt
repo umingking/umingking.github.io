@@ -1,3 +1,4 @@
+https://blog.mizukiai.top/2024/06/12/ChatGPT-%E5%BC%80%E5%90%AF%E8%B6%8A%E7%8B%B1%E6%A8%A1%E5%BC%8F%EF%BC%81%E4%B8%8D%E5%8F%AF%E6%80%9D%E8%AE%AE%EF%BC%8CGPT-4o%E9%83%BD%E8%83%BD%E6%92%A9%E5%A6%B9%E4%BA%86/
 https://blog.mizukiai.top/2024/05/23/%E9%80%9A%E8%BF%87Cloudflare-Worker%E3%80%81Pages%E9%83%A8%E7%BD%B2%E5%85%8D%E8%B4%B9%E7%9A%84VLESS%E8%8A%82%E7%82%B9/
 https://blog.mizukiai.top/2024/04/27/%E6%8A%96%E9%9F%B3%E5%85%A5%E9%97%A8%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/
 https://blog.mizukiai.top/2024/03/09/%E5%AD%A6%E4%B9%A0openAI%E7%9A%84API%E6%8E%A5%E5%8F%A3%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/
@@ -47,8 +48,8 @@ https://blog.mizukiai.top/tags/%E8%87%AA%E5%AA%92%E4%BD%93/
 https://blog.mizukiai.top/tags/%E5%85%AB%E5%AD%97/
 https://blog.mizukiai.top/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/
 https://blog.mizukiai.top/categories/%E4%BA%92%E8%81%94%E7%BD%91%E6%8A%80%E6%9C%AF%E7%B1%BB/
-https://blog.mizukiai.top/categories/%E4%BA%92%E8%81%94%E7%BD%91%E6%8A%80%E6%9C%AF%E7%B1%BB/%E9%97%AE%E9%A2%98/
 https://blog.mizukiai.top/categories/%E4%BA%92%E8%81%94%E7%BD%91%E6%8A%80%E6%9C%AF%E7%B1%BB/ChatGPT/
+https://blog.mizukiai.top/categories/%E4%BA%92%E8%81%94%E7%BD%91%E6%8A%80%E6%9C%AF%E7%B1%BB/%E9%97%AE%E9%A2%98/
 https://blog.mizukiai.top/categories/%E4%BA%92%E8%81%94%E7%BD%91%E6%8A%80%E6%9C%AF%E7%B1%BB/Hexo/
 https://blog.mizukiai.top/categories/%E5%AD%A6%E4%B9%A0%E6%88%90%E9%95%BF/
 https://blog.mizukiai.top/categories/%E4%BA%92%E8%81%94%E7%BD%91%E6%8A%80%E6%9C%AF%E7%B1%BB/Markdown/
