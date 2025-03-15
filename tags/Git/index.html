@@ -7,20 +7,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <meta name="google-site-verification" content="A9Zb_L0Sd7DwxoDm0_6qXRYjHBUUjnGnHdM05dTYfYA" />
   <link rel="dns-prefetch" href="https://blog.mizukiai.top">
-  <title>学习openAI的API接口遇到的问题 | Mizuki</title>
+  <title>Tag: Git | Mizuki</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="1.语音文件转文本和翻译接口，http.post请求接口遇到的问题：    model放在data请求参数中，语音文件放在files请求参数中。">
-<meta property="og:type" content="article">
-<meta property="og:title" content="学习openAI的API接口遇到的问题">
-<meta property="og:url" content="https://blog.mizukiai.top/2024/03/09/%E5%AD%A6%E4%B9%A0openAI%E7%9A%84API%E6%8E%A5%E5%8F%A3%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/index.html">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Mizuki">
+<meta property="og:url" content="https://blog.mizukiai.top/tags/Git/index.html">
 <meta property="og:site_name" content="Mizuki">
-<meta property="og:description" content="1.语音文件转文本和翻译接口，http.post请求接口遇到的问题：    model放在data请求参数中，语音文件放在files请求参数中。">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2024-03-09T06:23:03.000Z">
-<meta property="article:modified_time" content="2024-03-09T06:33:56.000Z">
 <meta property="article:author" content="Mizuki">
-<meta property="article:tag" content="技术学习">
-<meta property="article:tag" content="ChatGPT">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="Mizuki" type="application/atom+xml">
@@ -39,7 +33,7 @@
 
   
 
-<!-- hexo injector head_end start --><script> let HEXO_MMEDIA_DATA = { js: [], css: [], aplayerData: [], metingData: [], artPlayerData: [], dplayerData: []}; </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.0.0"></head>
+<meta name="generator" content="Hexo 7.0.0"></head>
 
 <body>
   <div id="container" q-class="show:isCtnShow">
@@ -198,104 +192,56 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-学习openAI的API接口遇到的问题" class="article article-type-post " itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
+            
   
-    <h1 class="article-title" itemprop="name">
-      学习openAI的API接口遇到的问题
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2024" class="archive-year">2024</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2024/01/28/ssh%E8%BF%9E%E6%8E%A5github%E6%8A%A5%E9%94%99/" class="archive-article-date">
+  	<time datetime="2024-01-28T03:10:39.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2024-01-28</time>
+</a>
+        </div>
+    	 
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2024/01/28/ssh%E8%BF%9E%E6%8E%A5github%E6%8A%A5%E9%94%99/">ssh连接github报错</a>
     </h1>
   
 
-        
-        
-        <a href="/2024/03/09/%E5%AD%A6%E4%B9%A0openAI%E7%9A%84API%E6%8E%A5%E5%8F%A3%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/" class="archive-article-date">
-  	<time datetime="2024-03-09T06:23:03.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2024-03-09</time>
-</a>
-        
-        <!-- 需要添加的位置 -->
-        <!-- 开始添加字数统计-->
-        
-          <div style="margin-right: 1%;color: #999;">
-    <span class="post-time">
-      <span class="post-meta-item-icon">
-        <i class="fa fa-keyboard-o"></i>
-        <span class="post-meta-item-text">  总字数: </span>
-        <span class="post-count">199字</span>
-      </span>
-    </span>
-
-    <span class="post-time">
-      |
-      <span class="post-meta-item-icon">
-        <i class="fa fa-hourglass-half"></i>
-        <span class="post-meta-item-text">  阅读时长: </span>
-        <span class="post-count">1分</span>
-      </span>
-    </span>
-</div>
-        
-      <!-- 添加完成 -->
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>1.语音文件转文本和翻译接口，http.post请求接口遇到的问题：<br>    model放在data请求参数中，语音文件放在files请求参数中。</p>
-<span id="more"></span>
-<p>2.File文件上传接口,jsonl数据格式不符合要求。<br>    jsonl数据格式要求符合openai的chat格式。此格式数据用来微调模型的。<br>    <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;&quot;messages&quot;:[&#123;&quot;role&quot;: &quot;system&quot;, &quot;content&quot;: &quot;You are a knowledgeable assistant.&quot;&#125;, &#123;&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;What is Laravel?&quot;&#125; , &#123;&quot;role&quot;: &quot;assistant&quot;, &quot;content&quot;: &quot;Laravel is a free, open-source PHP web framework used for web application development.&quot;&#125;]&#125;</span><br></pre></td></tr></table></figure></p>
-<p>3.微调接口需要付费，才能用上传的数据集文件，进行微调训练。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Fine-tuning jobs cannot be created on an Explore plan. You can upgrade to a paid plan on your billing page</span><br></pre></td></tr></table></figure>
-      
-
-      
-        <div class="page-reward">
-          <a href="javascript:;" class="page-reward-btn tooltip-top">
-            <div class="tooltip tooltip-east">
-            <span class="tooltip-item">
-              赏
-            </span>
-            <span class="tooltip-content">
-              <span class="tooltip-text">
-                <span class="tooltip-inner">
-                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我喝咖啡！<i class="icon icon-quo-right"></i></p>
-                  <div class="reward-box">
-                    
-                    
-                    <div class="reward-box-item">
-                      <img class="reward-img" src="/img/wechat.jpg">
-                      <span class="reward-type">微信</span>
-                    </div>
-                    
-                  </div>
-                </span>
-              </span>
-            </span>
-          </div>
-          </a>
-        </div>
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
+        <div class="article-info info-on-right">
+          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">技术学习</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">技术问题</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">ChatGPT</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Git</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">GitHub</a>
         		</li>
       		
 		</ul>
 	</div>
 
-      
+          
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
@@ -305,168 +251,24 @@
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="/categories/互联网技术类/ChatGPT//" class="article-tag-list-link color3">ChatGPT</a>
+        			<a href="/categories/互联网技术类/问题解决//" class="article-tag-list-link color5">问题解决</a>
         		</li>
       		
 		</ul>
 	</div>
 
 
-      
-      <!--显示阅读次数-->
-      
-        <a class="cloud-tie-join-count" href="/2024/03/09/%E5%AD%A6%E4%B9%A0openAI%E7%9A%84API%E6%8E%A5%E5%8F%A3%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/" style="color:gray;font-size:14px;">
-          <span class="icon-smile"></span>
-          <span id="busuanzi_container_page_pv">
-            阅读量<span id="busuanzi_value_page_pv"></span>
-          </span>
-        </a>
-      
-      
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
         </div>
-      </div>
-    </span>
-  </div>
-</div>
-
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://blog.mizukiai.top/2024/03/09/%E5%AD%A6%E4%B9%A0openAI%E7%9A%84API%E6%8E%A5%E5%8F%A3%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
-      
-      <div class="clearfix"></div>
-    </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-  
-<nav id="article-nav">
-  
-    <a href="/2024/04/27/%E6%8A%96%E9%9F%B3%E5%85%A5%E9%97%A8%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          抖音入门基础学习课程
-        
-      </div>
-    </a>
   
   
-    <a href="/2024/02/28/%E8%87%AA%E5%AA%92%E4%BD%93%E4%BA%BA%E5%A6%82%E4%BD%95%E6%8F%90%E5%8D%87%E8%87%AA%E5%B7%B1%E7%9A%84%E6%A0%B8%E5%BF%83%E7%AB%9E%E4%BA%89%E5%8A%9B/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">自媒体人如何提升自己的核心竞争力</div>
-      <i class="icon-circle-right"></i>
-    </a>
-  
-</nav>
-
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-  
-  
+    </div></section>
   
 
-  
-
-  
-
-  
-
-  
-    <section id="comments" class="comments">
-      <style>
-        .comments {
-          margin: 30px;
-          padding: 10px;
-          background: #fff
-        }
     
-        @media screen and (max-width:800px) {
-          .comments {
-            margin: auto;
-            padding: 10px;
-            background: #fff
-          }
-        }
-      </style>
-      <div id="vcomment" class="comment"></div> 
-<!-- <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-<script src="//unpkg.com/valine/dist/Valine.min.js"></script> -->
-<script src="/lib/valine/av-min.js"></script>
-<script src='/lib/valine/Valine.min.js'></script>
-<script>
-   var notify = 'false' == true ? true : false;
-   var verify = 'false' == true ? true : false;
-    window.onload = function() {
-        new Valine({
-            el: '#vcomment',
-            notify: notify,
-            verify: verify,
-            app_id: "uDwpMdHRwcfD8vgiyyyFB9VQ-MdYXbMMI",
-            app_key: "9uWsQXGzovg9KJxyLDGrkifB",
-            placeholder: "欢迎留下你的评论",
-            avatar:"mm"
-        });
-    }
-</script>
-    </section>
-  
 
 
           </div>
@@ -496,9 +298,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: true,
+		isPost: false,
 		isArchive: false,
-		isTag: false,
+		isTag: true,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
@@ -833,5 +635,5 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
 
 </div>
   </div>
-<!-- hexo injector body_end start --><script src="/assets/mmedia/mmedia-loader.js"></script><!-- hexo injector body_end end --></body>
+</body>
 </html>
