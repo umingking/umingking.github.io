@@ -448,7 +448,7 @@
   </url>
   
   <url>
-    <loc>https://blog.mizukiai.top/tags/GitHub/</loc>
+    <loc>https://blog.mizukiai.top/tags/Github/</loc>
     <lastmod>2025-04-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -524,13 +524,6 @@
     <priority>0.2</priority>
   </url>
   
-  <url>
-    <loc>https://blog.mizukiai.top/tags/Github/</loc>
-    <lastmod>2025-04-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
 
   
   <url>
@@ -583,14 +576,14 @@
   </url>
   
   <url>
-    <loc>https://blog.mizukiai.top/categories/%E4%BA%92%E8%81%94%E7%BD%91%E6%8A%80%E6%9C%AF%E7%B1%BB/Hexo/%E5%AE%9E%E6%93%8D%E7%B1%BB/</loc>
+    <loc>https://blog.mizukiai.top/categories/%E5%AD%A6%E4%B9%A0%E6%88%90%E9%95%BF/</loc>
     <lastmod>2025-04-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.mizukiai.top/categories/%E5%AD%A6%E4%B9%A0%E6%88%90%E9%95%BF/</loc>
+    <loc>https://blog.mizukiai.top/categories/%E4%BA%92%E8%81%94%E7%BD%91%E6%8A%80%E6%9C%AF%E7%B1%BB/Hexo/%E5%AE%9E%E6%93%8D%E7%B1%BB/</loc>
     <lastmod>2025-04-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -605,6 +598,13 @@
   
   <url>
     <loc>https://blog.mizukiai.top/categories/%E4%BA%92%E8%81%94%E7%BD%91%E6%8A%80%E6%9C%AF%E7%B1%BB/AI/</loc>
+    <lastmod>2025-04-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.mizukiai.top/categories/%E4%BA%92%E8%81%94%E7%BD%91%E6%8A%80%E6%9C%AF%E7%B1%BB/Github/</loc>
     <lastmod>2025-04-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -633,13 +633,6 @@
   
   <url>
     <loc>https://blog.mizukiai.top/categories/%E5%AD%A6%E4%B9%A0%E6%88%90%E9%95%BF/%E8%87%AA%E5%AA%92%E4%BD%93/</loc>
-    <lastmod>2025-04-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.mizukiai.top/categories/%E4%BA%92%E8%81%94%E7%BD%91%E6%8A%80%E6%9C%AF%E7%B1%BB/Github/</loc>
     <lastmod>2025-04-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
