@@ -9,15 +9,15 @@
   <link rel="dns-prefetch" href="https://blog.mizukiai.top">
   <title>Eclipse中执行Maven命令 | Mizuki</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="在 Eclipse 中通过 Maven 命令运行项目，可以使用 Maven 的生命周期阶段（如 compile、test、package）或直接调用插件目标（如 spring-boot:run）。以下是具体操作步骤和常见命令示例：  一、在 Eclipse 中执行 Maven 命令 右键项目运行    右键单击项目，选择 Run As &gt; Maven build。 在弹出窗口中输入 Mave">
+  <meta name="description" content="在 Eclipse 中通过 Maven 命令运行项目，可以使用 Maven 的生命周期阶段（如 compile、test、package）或直接调用插件目标（如 spring-boot:run）。以下是具体操作步骤和常见命令示例：  一、在 Eclipse 中执行 Maven 命令">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Eclipse中执行Maven命令">
 <meta property="og:url" content="https://blog.mizukiai.top/2025/05/20/Eclipse%E4%B8%AD%E6%89%A7%E8%A1%8CMaven%E5%91%BD%E4%BB%A4/index.html">
 <meta property="og:site_name" content="Mizuki">
-<meta property="og:description" content="在 Eclipse 中通过 Maven 命令运行项目，可以使用 Maven 的生命周期阶段（如 compile、test、package）或直接调用插件目标（如 spring-boot:run）。以下是具体操作步骤和常见命令示例：  一、在 Eclipse 中执行 Maven 命令 右键项目运行    右键单击项目，选择 Run As &gt; Maven build。 在弹出窗口中输入 Mave">
+<meta property="og:description" content="在 Eclipse 中通过 Maven 命令运行项目，可以使用 Maven 的生命周期阶段（如 compile、test、package）或直接调用插件目标（如 spring-boot:run）。以下是具体操作步骤和常见命令示例：  一、在 Eclipse 中执行 Maven 命令">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2025-05-20T15:00:39.000Z">
-<meta property="article:modified_time" content="2025-05-20T15:12:59.520Z">
+<meta property="article:modified_time" content="2025-05-20T15:21:17.898Z">
 <meta property="article:author" content="Mizuki">
 <meta property="article:tag" content="技术问题">
 <meta property="article:tag" content="Eclipse">
@@ -245,25 +245,22 @@
       
         <p>在 Eclipse 中通过 Maven 命令运行项目，可以使用 Maven 的生命周期阶段（如 <code>compile</code>、<code>test</code>、<code>package</code>）或直接调用插件目标（如 <code>spring-boot:run</code>）。以下是具体操作步骤和常见命令示例：</p>
 <hr>
-<h3 id="一、在-Eclipse-中执行-Maven-命令"><a href="#一、在-Eclipse-中执行-Maven-命令" class="headerlink" title="一、在 Eclipse 中执行 Maven 命令"></a><strong>一、在 Eclipse 中执行 Maven 命令</strong></h3><ol>
-<li><p><strong>右键项目运行</strong>  </p>
+<h3 id="一、在-Eclipse-中执行-Maven-命令"><a href="#一、在-Eclipse-中执行-Maven-命令" class="headerlink" title="一、在 Eclipse 中执行 Maven 命令"></a><strong>一、在 Eclipse 中执行 Maven 命令</strong></h3><span id="more"></span>
+<p>1.<strong>右键项目运行</strong>  </p>
 <ul>
 <li>右键单击项目，选择 <code>Run As &gt; Maven build</code>。</li>
 <li>在弹出窗口中输入 <strong>Maven 命令</strong>（例如 <code>clean install</code>），点击 <code>Run</code>。</li>
 <li>查看控制台输出，确认构建是否成功。</li>
 </ul>
-</li>
-<li><p><strong>自定义运行配置</strong>  </p>
+<p>2.<strong>自定义运行配置</strong>  </p>
 <ul>
 <li>右键项目，选择 <code>Run As &gt; Maven build...</code>（注意末尾的 <code>...</code>）。</li>
 <li>在 <code>Goals</code> 输入框填写命令（例如 <code>spring-boot:run</code>）。</li>
 <li>（可选）添加参数（如 <code>-DskipTests</code> 跳过测试）。</li>
 <li>点击 <code>Run</code>，后续可通过 <code>Run &gt; Run History</code> 快速复用配置。</li>
 </ul>
-</li>
-</ol>
 <hr>
-<h3 id="二、常用-Maven-命令示例"><a href="#二、常用-Maven-命令示例" class="headerlink" title="二、常用 Maven 命令示例"></a><strong>二、常用 Maven 命令示例</strong></h3><h4 id="1-基本生命周期命令"><a href="#1-基本生命周期命令" class="headerlink" title="1. 基本生命周期命令"></a>1. <strong>基本生命周期命令</strong></h4><table>
+<h3 id="二、常用-Maven-命令示例"><a href="#二、常用-Maven-命令示例" class="headerlink" title="二、常用 Maven 命令示例"></a><strong>二、常用 Maven 命令示例</strong></h3><h4 id="1-基本生命周期命令"><a href="#1-基本生命周期命令" class="headerlink" title="1.基本生命周期命令"></a>1.<strong>基本生命周期命令</strong></h4><table>
 <thead>
 <tr>
 <th>命令</th>
@@ -295,52 +292,47 @@
 <td>先清理再构建并安装（常用组合命令）。</td>
 </tr>
 </tbody></table>
-<h4 id="2-运行主类（普通-Java-项目）"><a href="#2-运行主类（普通-Java-项目）" class="headerlink" title="2. 运行主类（普通 Java 项目）"></a>2. <strong>运行主类（普通 Java 项目）</strong></h4><p>如果项目是一个普通 Java 应用（有 <code>main</code> 方法），可以通过 <code>exec-maven-plugin</code> 直接运行：</p>
+<h4 id="2-运行主类（普通-Java-项目）"><a href="#2-运行主类（普通-Java-项目）" class="headerlink" title="2.运行主类（普通 Java 项目）"></a>2.<strong>运行主类（普通 Java 项目）</strong></h4><p>如果项目是一个普通 Java 应用（有 <code>main</code> 方法），可以通过 <code>exec-maven-plugin</code> 直接运行：</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">mvn <span class="built_in">exec</span>:java -Dexec.mainClass=<span class="string">&quot;com.example.MainClass&quot;</span></span><br></pre></td></tr></table></figure>
 <ul>
 <li><strong>在 Eclipse 中</strong>：将 <code>exec:java -Dexec.mainClass=&quot;com.example.MainClass&quot;</code> 填入 <code>Goals</code>。</li>
 </ul>
-<h4 id="3-启动-Web-项目（如-Tomcat）"><a href="#3-启动-Web-项目（如-Tomcat）" class="headerlink" title="3. 启动 Web 项目（如 Tomcat）"></a>3. <strong>启动 Web 项目（如 Tomcat）</strong></h4><p>使用 <code>tomcat7-maven-plugin</code> 运行 Web 项目（需在 <code>pom.xml</code> 中配置插件）：</p>
+<h4 id="3-启动-Web-项目（如-Tomcat）"><a href="#3-启动-Web-项目（如-Tomcat）" class="headerlink" title="3.启动 Web 项目（如 Tomcat）"></a>3.<strong>启动 Web 项目（如 Tomcat）</strong></h4><p>使用 <code>tomcat7-maven-plugin</code> 运行 Web 项目（需在 <code>pom.xml</code> 中配置插件）：</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">mvn tomcat7:run</span><br></pre></td></tr></table></figure>
 <ul>
 <li><strong>要求</strong>：确保 <code>pom.xml</code> 包含以下配置：<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">build</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">plugins</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">plugin</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.tomcat.maven<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>tomcat7-maven-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.2<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">plugins</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">build</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
 </ul>
-<h4 id="4-运行-Spring-Boot-项目"><a href="#4-运行-Spring-Boot-项目" class="headerlink" title="4. 运行 Spring Boot 项目"></a>4. <strong>运行 Spring Boot 项目</strong></h4><p>使用 <code>spring-boot-maven-plugin</code> 启动 Spring Boot 项目：</p>
+<h4 id="4-运行-Spring-Boot-项目"><a href="#4-运行-Spring-Boot-项目" class="headerlink" title="4.运行 Spring Boot 项目"></a>4.<strong>运行 Spring Boot 项目</strong></h4><p>使用 <code>spring-boot-maven-plugin</code> 启动 Spring Boot 项目：</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">mvn spring-boot:run</span><br></pre></td></tr></table></figure>
 <ul>
 <li><strong>要求</strong>：<code>pom.xml</code> 中需配置 Spring Boot 插件：<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">build</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">plugins</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">plugin</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-maven-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">plugins</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">build</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
 </ul>
-<h4 id="5-运行Jetty项目"><a href="#5-运行Jetty项目" class="headerlink" title="5. 运行Jetty项目"></a>5. <strong>运行Jetty项目</strong></h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">mvn jetty:run</span><br></pre></td></tr></table></figure>
+<h4 id="5-启动web项目-如-Jetty"><a href="#5-启动web项目-如-Jetty" class="headerlink" title="5.启动web项目(如 Jetty)"></a>5.<strong>启动web项目(如 Jetty)</strong></h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">mvn jetty:run</span><br></pre></td></tr></table></figure>
 <ul>
 <li><strong>要求</strong>：<code>pom.xml</code> 中需配置 Jetty 插件：<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line">  <span class="tag">&lt;<span class="name">build</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">plugins</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">plugin</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.eclipse.jetty<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>jetty-maven-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">version</span>&gt;</span>11.0.20<span class="tag">&lt;/<span class="name">version</span>&gt;</span> <span class="comment">&lt;!-- 根据需求选择版本 --&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">configuration</span>&gt;</span></span><br><span class="line">                <span class="comment">&lt;!-- 配置 HTTP 端口 --&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">httpConnector</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">port</span>&gt;</span>9090<span class="tag">&lt;/<span class="name">port</span>&gt;</span> <span class="comment">&lt;!-- 自定义端口号，默认是 8080 --&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">httpConnector</span>&gt;</span></span><br><span class="line"></span><br><span class="line">                <span class="comment">&lt;!-- 可选：配置上下文路径 --&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">webApp</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">contextPath</span>&gt;</span>/myapp<span class="tag">&lt;/<span class="name">contextPath</span>&gt;</span> <span class="comment">&lt;!-- 默认是 / --&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">webApp</span>&gt;</span></span><br><span class="line"></span><br><span class="line">                <span class="comment">&lt;!-- 可选：配置 HTTPS（需要证书） --&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">connectors</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">connector</span>&gt;</span></span><br><span class="line">                        <span class="tag">&lt;<span class="name">class</span>&gt;</span>org.eclipse.jetty.server.ServerConnector<span class="tag">&lt;/<span class="name">class</span>&gt;</span></span><br><span class="line">                        <span class="tag">&lt;<span class="name">port</span>&gt;</span>8443<span class="tag">&lt;/<span class="name">port</span>&gt;</span></span><br><span class="line">                        <span class="tag">&lt;<span class="name">scheme</span>&gt;</span>https<span class="tag">&lt;/<span class="name">scheme</span>&gt;</span></span><br><span class="line">                        <span class="tag">&lt;<span class="name">secure</span>&gt;</span>true<span class="tag">&lt;/<span class="name">secure</span>&gt;</span></span><br><span class="line">                        <span class="comment">&lt;!-- 证书配置示例 --&gt;</span></span><br><span class="line">                        <span class="tag">&lt;<span class="name">sslContext</span>&gt;</span></span><br><span class="line">                            <span class="tag">&lt;<span class="name">keyStorePath</span>&gt;</span>/path/to/keystore.jks<span class="tag">&lt;/<span class="name">keyStorePath</span>&gt;</span></span><br><span class="line">                            <span class="tag">&lt;<span class="name">keyStorePassword</span>&gt;</span>password<span class="tag">&lt;/<span class="name">keyStorePassword</span>&gt;</span></span><br><span class="line">                        <span class="tag">&lt;/<span class="name">sslContext</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;/<span class="name">connector</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">connectors</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">configuration</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">plugins</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">build</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
 </ul>
-<h4 id="6-跳过测试"><a href="#6-跳过测试" class="headerlink" title="6. 跳过测试"></a>6. <strong>跳过测试</strong></h4><p>在命令后添加 <code>-DskipTests</code> 跳过测试：</p>
+<h4 id="6-跳过测试"><a href="#6-跳过测试" class="headerlink" title="6.跳过测试"></a>6.<strong>跳过测试</strong></h4><p>在命令后添加 <code>-DskipTests</code> 跳过测试：</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">mvn clean install -DskipTests</span><br></pre></td></tr></table></figure>
 
-<h4 id="7-指定-Profile"><a href="#7-指定-Profile" class="headerlink" title="7. 指定 Profile"></a>7. <strong>指定 Profile</strong></h4><p>通过 <code>-P</code> 激活特定 Profile（如 <code>dev</code>）：</p>
+<h4 id="7-指定-Profile"><a href="#7-指定-Profile" class="headerlink" title="7.指定 Profile"></a>7.<strong>指定 Profile</strong></h4><p>通过 <code>-P</code> 激活特定 Profile（如 <code>dev</code>）：</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">mvn clean install -Pdev</span><br></pre></td></tr></table></figure>
 
 <hr>
-<h3 id="三、常见问题解决"><a href="#三、常见问题解决" class="headerlink" title="三、常见问题解决"></a><strong>三、常见问题解决</strong></h3><ol>
-<li><p><strong>依赖下载失败</strong>  </p>
+<h3 id="三、常见问题解决"><a href="#三、常见问题解决" class="headerlink" title="三、常见问题解决"></a><strong>三、常见问题解决</strong></h3><p>1.<strong>依赖下载失败</strong>  </p>
 <ul>
 <li>检查网络连接。</li>
 <li>修改 Maven 镜像仓库（编辑 <code>settings.xml</code>，使用阿里云镜像）：<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">mirror</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">id</span>&gt;</span>aliyunmaven<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">mirrorOf</span>&gt;</span>*<span class="tag">&lt;/<span class="name">mirrorOf</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">name</span>&gt;</span>阿里云仓库<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">url</span>&gt;</span>https://maven.aliyun.com/repository/public<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">mirror</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
 </ul>
-</li>
-<li><p><strong>插件未生效</strong>  </p>
+<p>2.<strong>插件未生效</strong>  </p>
 <ul>
 <li>确保 <code>pom.xml</code> 中已正确配置插件。</li>
 <li>更新 Maven 项目：右键项目 &gt; <code>Maven &gt; Update Project</code>（快捷键 <code>Alt+F5</code>）。</li>
 </ul>
-</li>
-<li><p><strong>命令执行报错</strong>  </p>
+<p>3.<strong>命令执行报错</strong>  </p>
 <ul>
 <li>检查控制台输出的具体错误信息（如缺失依赖、版本冲突等）。</li>
 <li>尝试先执行 <code>mvn clean</code> 清理旧构建。</li>
 </ul>
-</li>
-</ol>
 <hr>
 <h3 id="四、扩展：命令行中使用-Maven"><a href="#四、扩展：命令行中使用-Maven" class="headerlink" title="四、扩展：命令行中使用 Maven"></a><strong>四、扩展：命令行中使用 Maven</strong></h3><p>如果需要在终端（非 Eclipse）运行 Maven 命令：</p>
 <ol>
@@ -687,6 +679,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">年度计划</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">跨年总结</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">技术学习</a>
               </li>
              
@@ -695,11 +695,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">年度计划</a>
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">跨年总结</a>
+                <a href="javascript:void(0)" class="js-tag color2">hexo插件</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">技术实操</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -719,23 +723,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">hexo插件</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">技术实操</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Git</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Github</a>
+                <a href="javascript:void(0)" class="js-tag color5">Vue3</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -747,11 +735,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Vue3</a>
+                <a href="javascript:void(0)" class="js-tag color4">Git</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">自媒体</a>
+                <a href="javascript:void(0)" class="js-tag color2">Github</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -767,11 +755,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">八字</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">科学上网</a>
+                <a href="javascript:void(0)" class="js-tag color4">自媒体</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -780,6 +764,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">AI聊天</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">八字</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">科学上网</a>
               </li>
             
             <div class="clearfix"></div>
